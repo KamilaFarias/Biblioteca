@@ -1,5 +1,7 @@
 package br.edu.ifpb.biblioteca;
 
+import java.util.List;
+
 import org.hibernate.Session;
 
 public abstract class Dao<T> {
@@ -37,5 +39,8 @@ public abstract class Dao<T> {
 		session.getTransaction().commit();
 		session.close();
 	}
+	
 	public abstract T getById(String pk);
+	
+	public abstract List<T> getAll();
 }

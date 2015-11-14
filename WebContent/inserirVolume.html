@@ -13,42 +13,42 @@
 		<br><br/>
 	</font>
 			
-			<font size="5">	 	
-     <form method="post" action="formHandler.jsp">
+			 	
+     <form method="post" action="InserirBD.do">
+     	<font size="5">
             Titulo:
 				<input type="text" size="20" id="titulo" name="titulo" />
 				<br>
 			Autor:
 				<input type="text" size="20" id="autor" name="autor" />
-				</br>
+				<br>
 			Descrição:
 				<br>
-				<textarea rows="10" cols="40" maxlength="500"></textarea>
-				</br>
+				<textarea rows="10" cols="40" maxlength="500" name="descricao"></textarea>
+				<br>
 				<br>
 			Tipos de volume:
-					<select Volume = "Tipos de volume:">
-						<option>Selecione
-						<option>Livros
-						<option>Periódicos
-						<option>Fotografias
-						<option>Áudios
+					<select Volume = "Tipos de volume:" name="tipoVolume">
+						<option selected="selected" disabled="disabled">Selecione</option>
+						<option value="livro">Livros</option>
+						<option value="periodico">Periódicos</option>
+						<option value="fotografia">Fotografias</option>
+						<option value="audio">Áudios</option>
 					</select>
-				</br>
+				<br>
 			    <br>
 			Numero de paginas:
-				<input type="integer"" size="20" id="numPaginas" name="numPaginas" />
-				</br>	
+				<input type="number" size="20" id="numPaginas" name="numPaginas" />
+				<br>	
 				<br>
 			Ano de publicação:
-				<input type="integer" size="20" id="ano" name="ano" />
-				</br>
-				<br></br>
+				<input type="text" size="20" id="ano" name="ano" />
+				<br>
+				<br>
 			Editora:
 				<input type="text" size="20" id="editora" name="editora" />
 				<input type="submit" style="width:90;height:25" value="Enviar">  	
+	 	</font>
 	 </form>	
-			</font>
-	
   </body>
 </html>

@@ -8,13 +8,13 @@
 	</head>
 	<body>
 		<form method="post" action="Login.do">
-			<h3>Administrador<h3><br>
-			<h4>Nome:<h4> <input type="text" name="nomeAdmin"><br>
-			<h4>Senha:<h4> <input type="text" name="senhaAdmin">
+			<h3>Administrador</h3><br>
+			<h4>Nome:</h4> <input type="text" name="nomeAdmin"><br>
+			<h4>Senha:</h4> <input type="text" name="senhaAdmin">
 			<input type="submit" name="botão-admin" value="OK"> <br>
 		</form>
 		<form action="" method = "post">
-			<h3> Usuário <h3> 
+			<h3> Usuário </h3> 
 			<input type="submit" name="botão-usuário" value="OK" > <br>
 		</form>
 	</body>

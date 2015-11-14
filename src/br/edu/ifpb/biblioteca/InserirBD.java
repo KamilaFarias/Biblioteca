@@ -16,6 +16,19 @@ public class InserirBD extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		
+		VolumeDAO dao = new VolumeDAO();
+		
+		Volume vol = new Volume();
+		
+		vol.setAutores(request.getParameter("autor"));
+		vol.setAnoPublicacao(request.getParameter("ano"));
+		vol.setDescricao(request.getParameter("descricao"));
+		vol.setEditora(request.getParameter("editora"));
+		vol.setNumPaginas(Integer.parseInt(request.getParameter("numPaginas")));
+		vol.setTipoVolume(request.getParameter("tipoVolume"));
+		vol.setTitulo(request.getParameter("titulo"));
+		
+		dao.insert(vol);
 	}
 
 }

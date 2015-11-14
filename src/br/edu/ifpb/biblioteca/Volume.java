@@ -1,11 +1,11 @@
 package br.edu.ifpb.biblioteca;
 
-import java.util.Calendar;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 
 @Entity
+@NamedQuery(name = "Volume.getAll", query = "from Volume")
 public class Volume {
 	
 	@Id
@@ -15,7 +15,7 @@ public class Volume {
 	private String descricao;
 	private String tipoVolume;
 	private Integer numPaginas;
-	private Calendar anoPublicacao;
+	private String anoPublicacao;
 	private String editora;
 	
 	public String getTitulo() {
@@ -58,11 +58,11 @@ public class Volume {
 		this.numPaginas = numPaginas;
 	}
 	
-	public Calendar getAnoPublicacao() {
+	public String getAnoPublicacao() {
 		return anoPublicacao;
 	}
 	
-	public void setAnoPublicacao(Calendar anoPublicacao) {
+	public void setAnoPublicacao(String anoPublicacao) {
 		this.anoPublicacao = anoPublicacao;
 	}
 	
