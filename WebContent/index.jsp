@@ -13,9 +13,8 @@
 			<h4>Senha:</h4> <input type="text" name="senhaAdmin">
 			<input type="submit" name="botão-admin" value="OK"> <br>
 		</form>
-		<form action="" method = "post">
-			<h3> Usuário </h3> 
-			<input type="submit" name="botão-usuário" value="OK" > <br>
-		</form>
+				
+		<a href="pesquisa.jsp">Clique aqui para ver todos os volumes</a>
+		
 	</body>
 </html>

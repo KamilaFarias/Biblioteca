@@ -12,13 +12,7 @@ public class Remover extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
-			throws ServletException, IOException {
-		
-		VolumeDAO dao = new VolumeDAO();
-		Volume vol = dao.getById(request.getParameter("IDinserido")); 
-		
-		dao.delete(vol);
-		
+			throws ServletException, IOException {		
 		response.sendRedirect("http://localhost:8080/Biblioteca/removerVolume.html");		
 	}
 

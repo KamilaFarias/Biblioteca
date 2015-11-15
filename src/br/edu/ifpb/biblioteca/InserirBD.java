@@ -29,6 +29,8 @@ public class InserirBD extends HttpServlet {
 		vol.setTitulo(request.getParameter("titulo"));
 		
 		dao.insert(vol);
+		
+		response.sendRedirect("http://localhost:8080/Biblioteca/inserirVolume.html");
 	}
 
 }
