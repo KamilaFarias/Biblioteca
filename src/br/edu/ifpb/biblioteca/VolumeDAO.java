@@ -27,7 +27,7 @@ public class VolumeDAO extends Dao<Volume> {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
 
-		Query query = session.getNamedQuery("Institution.getAll");
+		Query query = session.getNamedQuery("Volume.getAll");
 
 		@SuppressWarnings("unchecked")
 		List<Volume> volumes = query.list();
